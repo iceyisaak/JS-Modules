@@ -1,6 +1,6 @@
-# Classical JS Module
+# Require JS Module
 
-1. Main script is included at the last to avoid conflict
-2. The script is then loaded
+- Uses require.js
+- Uses AMD Module
 
-> Not recommended for larger projects
+> Now Obsolete

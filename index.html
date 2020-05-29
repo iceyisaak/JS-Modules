@@ -5,32 +5,21 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="style.css">
- <title>JS Modules: Classical</title>
+ <title>The Project</title>
+
+ <!-- data-main attribute triggers require.js to load script/main.js once require.js loads -->
+ <!-- REQUIRE.JS: http:s//github.com/requirejs/requirejs -->
+ <script data-main="script/main" src="js/require.js"></script>
 </head>
 
 <body>
- <h1>JS Classical Module</h1>
+ <h1>Require JS Module</h1>
 
-
- <!-- Blocking Script -->
- <script src="/js/moduleC.js"></script>
- <script src="/js/moduleB.js"></script>
- <script src="/js/moduleA.js"></script>
-
- <script>
-  // Load scripts asynchronously, create DOM on the fly
-  (function (d, t) {
-   var g = d.createElement(t),
-    s = d.getElementsByTagName(t)[0];
-   g.src = "./script.js";
-   s.parentNode.insertBefore(g, s);
-  })(document, "script");
 
 
  </script>
 
- <!-- Load script -->
- <script src="main.js"></script>
+
 </body>
 
 </html>
