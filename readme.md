@@ -1,6 +1,6 @@
-# Require JS Module
+# Common JS Module
 
-- Uses require.js
-- Uses AMD Module
+- NodeJS Convention
+- Import from 1 file, then import in the other
 
-> Now Obsolete
+> Typical NodeJS convention

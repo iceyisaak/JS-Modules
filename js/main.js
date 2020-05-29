@@ -1,10 +1,4 @@
-define([
- "component/underscore",
- "component/jQuery",
- "component/tracker",
- "component/analytics",
- "component/dog",
-], function (_, $, Tracker, Analytics, Dog) {
+// main.js: brings in speak.js by requiring it , then invoke it with 2 params. CommonJS will bring in needed modules when it looks up the dependency tree.
 
- console.log(_, $, Tracker, Analytics, Dog);
-});
+var speak = require("speak");
+speak("deu", 25);
