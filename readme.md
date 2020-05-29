@@ -1,6 +1,6 @@
-# Common JS Module
+# ES6 Module
 
-- NodeJS Convention
-- Import from 1 file, then import in the other
+- Can be named and aliased
+- Commonly Practice since late 2010s
 
-> Typical NodeJS convention
+> ES6 standard convention
