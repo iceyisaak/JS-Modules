@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <title>JS Modules: Classical</title>
+</head>
+
+<body>
+ <h1>JS Classical Module</h1>
+
+
+
+ <script src="/js/moduleC.js"></script>
+ <script src="/js/moduleB.js"></script>
+ <script src="/js/moduleA.js"></script>
+
+ <script>
+  // Load scripts asynchronously, create DOM on the fly
+  (function (d, t) {
+   var g = d.createElement(t),
+    s = d.getElementsByTagName(t)[0];
+   g.src = "./script.js";
+   s.parentNode.insertBefore(g, s);
+  })(document, "script");
+
+
+ </script>
+
+ <!-- Load script -->
+ <script async src="main.js"></script>
+</body>
+
+</html>
